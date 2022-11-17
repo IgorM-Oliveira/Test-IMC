@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\VendaTest::testFreteGratis":3,"Tests\\VendaTest::testGetNomeVendedor":3},"times":{"Tests\\VendaTest::testFreteGratis":0.11,"Tests\\VendaTest::testGetNomeVendedor":0.011}}

@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\ImcTest::testGetImc":4,"Tests\\ImcTest::testGetPesoAltura":4,"Tests\\ImcTest::testGetClassificacao":4},"times":{"Tests\\ImcTest::testGetImc":0.122,"Tests\\ImcTest::testGetPesoAltura":0,"Tests\\ImcTest::testGetClassificacao":0}}

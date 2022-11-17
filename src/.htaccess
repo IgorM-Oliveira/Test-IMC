@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteRule ^read/?$ 20220927/read.php [NC,L]
+  RewriteRule ^read/([0-9]+)/?$ 20220927/read.php?id=$1 [NC]
+  RewriteRule ^vota/([A-Za-z]+)/([0-9]+)/?$ 20221004/vota.php?nome=$1&idade=$2 [NC]
+</IfModule>

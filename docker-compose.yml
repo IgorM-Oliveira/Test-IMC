@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  php-apache-environment:
+    container_name: php-apache
+    build: ./php
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - 8000:80
+    links:
+      - pg-bd
+  pg-bd:
+    container_name: pg-bd
+    build: ./postgreSQL
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: example
+      POSTGRES_HOST_AUTH_METHOD: trust
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./postgreSQL/data:/var/lib/postgresql/data/pgdata
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    links:
+      - pg-bd
